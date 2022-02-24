@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display:grid;
+
+    grid-template-areas: 
+    /* "aspas" irá se referir a linhas que irão dividir a tela*/
+        "header header"
+        "main aside"
+        "footer footer";
+    /* fr deixa flexível a área*/
+    grid-template-rows: 40px 1fr 50px;
+    grid-template-columns: 1fr 100px;
+}
+header{
+    grid-area: header;
+    background-color: blue;
+}       
+main{
+    grid-area: main;
+    background-color: brown;
+}
+aside{
+    grid-area: aside;
+    background-color:aqua;
+}
+footer{
+    grid-area: footer;
+    background-color: blueviolet;
+}
